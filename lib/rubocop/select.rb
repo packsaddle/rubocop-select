@@ -1,4 +1,4 @@
-require "rubocop/select/version"
+require 'rubocop/select/version'
 
 module Rubocop
   module Select
