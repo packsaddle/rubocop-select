@@ -1,3 +1,9 @@
 #!/usr/bin/env ruby
 
 require 'rubocop/select'
+
+cli = RuboCop::Select::CLI.new
+result = 0
+
+result = cli.run
+exit result
