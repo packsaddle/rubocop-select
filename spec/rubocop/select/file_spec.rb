@@ -17,9 +17,9 @@ describe RuboCop::Select::File do
     end
   end
   context 'hit one file' do
-    let(:target_files) { ['foo', 'bar'] }
+    let(:target_files) { %w(foo bar) }
     let(:target_dir) { '/woo' }
-    let(:compare_files) { ['bar', 'baz'] }
+    let(:compare_files) { %w(bar baz) }
     let(:compare_dir) { '/woo' }
     let(:hit_one_file) { [(Pathname.new '/woo/bar')] }
     it 'returns one intersection' do
