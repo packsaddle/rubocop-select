@@ -32,8 +32,6 @@ describe RuboCop::Select::File do
     end
   end
   context 'actual example' do
-    let(:target_files) { ['.rubocop.yml', 'app/jobs/repo_synchronization_job.rb'] }
-    let(:target_dir) { '/path/to' }
     let(:compare_files) do
       [
         '/path/to/bundle_bin/sprockets',
@@ -43,13 +41,30 @@ describe RuboCop::Select::File do
     end
     let(:compare_dir) { '/woo' }
     let(:hit_one_file) { [(Pathname.new '/path/to/app/jobs/repo_synchronization_job.rb')] }
-    it 'returns one intersection' do
-      expect(described_class.intersect(
-               target_files,
-               target_dir,
-               compare_files,
-               compare_dir
-             )).to eq(hit_one_file)
+
+    context 'relative path' do
+      let(:target_files) { ['../.rubocop.yml', '../app/jobs/repo_synchronization_job.rb'] }
+      let(:target_dir) { '/path/to/foo' }
+      it 'returns one intersection(not relative)' do
+        expect(described_class.intersect(
+                 target_files,
+                 target_dir,
+                 compare_files,
+                 compare_dir
+               )).to eq(hit_one_file)
+      end
+    end
+    context 'only file name' do
+      let(:target_files) { ['.rubocop.yml', 'app/jobs/repo_synchronization_job.rb'] }
+      let(:target_dir) { '/path/to' }
+      it 'returns one intersection' do
+        expect(described_class.intersect(
+                 target_files,
+                 target_dir,
+                 compare_files,
+                 compare_dir
+               )).to eq(hit_one_file)
+      end
     end
   end
 end
