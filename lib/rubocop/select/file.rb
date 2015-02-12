@@ -9,11 +9,11 @@ module RuboCop
           after_base_dir = Dir.pwd
       )
         before_files.map do |file|
-          Pathname.new(file).relative_path_from(before_base_dir)
+          Pathname.new(file).relative_path_from(Pathname.new(before_base_dir))
         end \
         & \
         after_files.map do |file|
-          Pathname.new(file).relative_path_from(after_base_dir)
+          Pathname.new(file).relative_path_from(Pathname.new(after_base_dir))
         end
       end
     end
