@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
     .split("\x0")
     .reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.executables   = spec
-    .file
+    .files
     .grep(%r{^(exe/|bin/rubocop-select)}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
