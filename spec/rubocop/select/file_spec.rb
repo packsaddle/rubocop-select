@@ -34,11 +34,13 @@ describe RuboCop::Select::File do
   context 'actual example' do
     let(:target_files) { ['.rubocop.yml', 'app/jobs/repo_synchronization_job.rb'] }
     let(:target_dir) { '/path/to' }
-    let(:compare_files) { [
-      '/path/to/bundle_bin/sprockets',
-      '/path/to/app/jobs/repo_synchronization_job.rb',
-      '/path/to/Rakefile'
-    ] }
+    let(:compare_files) do
+      [
+        '/path/to/bundle_bin/sprockets',
+        '/path/to/app/jobs/repo_synchronization_job.rb',
+        '/path/to/Rakefile'
+      ]
+    end
     let(:compare_dir) { '/woo' }
     let(:hit_one_file) { [(Pathname.new '/path/to/app/jobs/repo_synchronization_job.rb')] }
     it 'returns one intersection' do
