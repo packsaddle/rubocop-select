@@ -46,7 +46,6 @@ module RuboCop
         puts RuboCop::Select.version(true) if @options[:verbose_version]
         exit(0)
       end
-
     end
   end
 end
