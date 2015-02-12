@@ -5,7 +5,7 @@ require 'rubocop/select/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'rubocop-select'
-  spec.version       = Rubocop::Select::VERSION
+  spec.version       = RuboCop::Select::VERSION
   spec.authors       = ['sanemat']
   spec.email         = ['o.gata.ken@gmail.com']
 

@@ -1,6 +1,6 @@
 require 'rubocop/select/version'
 
-module Rubocop
+module RuboCop
   module Select
     # Your code goes here...
   end
