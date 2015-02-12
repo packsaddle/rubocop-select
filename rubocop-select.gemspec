@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['sanemat']
   spec.email         = ['o.gata.ken@gmail.com']
 
-  spec.summary       = 'Select file path only executable by RuboCop. Diff RuboCop!'
+  spec.summary       = 'Select file path only executable by RuboCop. For Diff RuboCop!'
   spec.description   = 'Pipe between git diff and rubocop.'
   spec.homepage      = 'https://github.com/packsaddle/rubocop-select'
   spec.license       = 'MIT'
