@@ -69,7 +69,7 @@ lib/rubocop/select/file.rb:21:1: C: Trailing whitespace detected.
 2 files inspected, 1 offense detected
 ```
 
-Dome. :) :) :)
+Done. :) :) :)
 
 ## Installation
 
