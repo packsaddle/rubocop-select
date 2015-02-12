@@ -15,8 +15,8 @@ Gem::Specification.new do |spec|
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`
-    .split("\x0")
-    .reject { |f| f.match(%r{^(test|spec|features)/}) }
+                         .split("\x0")
+                         .reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.executables   = spec
                          .files
                          .reject { |f| f.match(%r{^bin/(console|setup)}) }
