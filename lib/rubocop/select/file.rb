@@ -12,9 +12,9 @@ module RuboCop
           Pathname.new(file).relative_path_from(Pathname.new(before_base_dir))
         end \
         & \
-        after_files.map do |file|
-          Pathname.new(file).relative_path_from(Pathname.new(after_base_dir))
-        end
+          after_files.map do |file|
+            Pathname.new(file).relative_path_from(Pathname.new(after_base_dir))
+          end
       end
     end
   end
