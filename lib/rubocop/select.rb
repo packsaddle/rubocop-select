@@ -1,4 +1,5 @@
 require 'rubocop/select/version'
+require 'rubocop/select/file'
 
 module RuboCop
   module Select
