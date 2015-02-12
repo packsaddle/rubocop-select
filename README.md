@@ -1,6 +1,6 @@
 # RuboCop::Select
 
-Select file path only executeable by RuboCop.
+Select file path only executable by RuboCop. __Diff RuboCop__ comes!
 
 ## Usage
 
@@ -66,7 +66,7 @@ lib/rubocop/select/file.rb:21:1: C: Trailing whitespace detected.
 2 files inspected, 1 offense detected
 ```
 
-:) :) :)
+Dome. :) :) :)
 
 ## Installation
 
