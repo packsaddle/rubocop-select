@@ -17,3 +17,8 @@ Style/Documentation:
 # Offense count: 2
 Style/RegexpLiteral:
   MaxSlashes: 0
+
+Style/FileName:
+  Exclude:
+    - bin/*
+    - bundle_bin/*
