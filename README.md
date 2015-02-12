@@ -1,6 +1,9 @@
 # RuboCop::Select
 
-Select file path only executable by RuboCop. __Diff RuboCop__ comes!
+[![Gem Version](http://img.shields.io/gem/v/rubocop-select.svg?style=flat)](http://badge.fury.io/rb/rubocop-select)
+[![Build Status](http://img.shields.io/travis/packsaddle/rubocop-select/master.svg?style=flat)](https://travis-ci.org/packsaddle/rubocop-select)
+
+Select file path only executable by RuboCop. **Diff RuboCop** comes!
 
 ## Usage
 
