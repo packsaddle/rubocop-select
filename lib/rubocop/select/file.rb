@@ -9,13 +9,12 @@ module RuboCop
           after_files = [],
           after_base_dir = Dir.pwd
       )
-        before_files.map do |file|
-          Pathname.new(::File.expand_path(file, before_base_dir))
-        end \
-        & \
-          after_files.map do |file|
-            Pathname.new(::File.expand_path(file, after_base_dir))
-          end
+        expand_files(before_files, before_base_dir) \
+        & expand_files(after_files, after_base_dir)
+      end
+
+      def self.expand_files(files, base_dir)
+        files.map { |f| Pathname.new(::File.expand_path(f, base_dir)) }
       end
     end
   end
