@@ -5,6 +5,8 @@
 
 Select file path only executable by RuboCop. **Diff RuboCop** comes!
 
+You can use `rubocop --force-exclusion` also.
+
 ## Usage
 
 Pipe between `git diff` and `rubocop`.
