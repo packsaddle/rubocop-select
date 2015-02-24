@@ -1,5 +1,3 @@
-require 'rubocop'
-
 module RuboCop
   module Select
     class CLI

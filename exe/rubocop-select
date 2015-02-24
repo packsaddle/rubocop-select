@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'rubocop/select'
+require 'rubocop/select/cli'
 
 cli = RuboCop::Select::CLI.new
 result = cli.run
