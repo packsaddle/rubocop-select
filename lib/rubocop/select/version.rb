@@ -1,6 +1,6 @@
 module RuboCop
   module Select
-    VERSION = '0.1.2-beta'
+    VERSION = '1.0.0'
 
     MSG = '%s (using RuboCop %s, running on %s %s %s)'
 
