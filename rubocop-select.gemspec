@@ -13,6 +13,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'Pipe between git diff and rubocop.'
   spec.homepage      = 'https://github.com/packsaddle/rubocop-select'
   spec.license       = 'MIT'
+  spec.required_ruby_version = '>= 2.0'
 
   spec.files         = `git ls-files -z`
     .split("\x0")
